@@ -1,37 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ice and Fire Test - Wizeline by Yohana Tunarrosa
 
-## Getting Started
+This is a [**Next.js**](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-First, run the development server:
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- **Node.js** (Recommended version: `18.x` or later)
+- **pnpm** (Package manager)
+
+### Installation
+
+Clone the repository and install dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
+```
+## ⚙️ Environment Variables
+
+Create a `.env.local` file and add the necessary environment variables:
+
+```
+NEXT_PUBLIC_API_URL=your_api_url_here
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Running the Development Server
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Start the development server:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+pnpm dev
+```
 
-## Learn More
+Then, open [**http://localhost:3000**](http://localhost:3000) in your browser.
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+├── src/
+│   ├── app/          # Main layout, pages and routes
+│   ├── components/   # Reusable UI components
+│   ├── hooks/        # Custom hooks
+│   ├── utils/        # Utility functions
+│   └── types/        # TypeScript types
+│   └── lib/          # Complement resources
+├── public/           # Static assets
+├── package.json      # Project dependencies and scripts
+├── next.config.js    # Next.js configuration
+├── tsconfig.json     # TypeScript configuration
+├── jest.config.js    # Jest configuration for testing
+├── .env.local        # Environment variables
+└── README.md         # Project documentation
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## 📦 Building for Production
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To create an optimized production build, run:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# icen-and-fire-test
+```bash
+pnpm build
+```
+
+To start the production server:
+
+```bash
+pnpm start
+```
+
+## 🛠 Technologies Used
+
+- **Next.js 15.0** – React framework for server-side rendering & static site generation
+- **TypeScript** – Strongly typed JavaScript
+- **Tailwind CSS** – Utility-first CSS framework
+- **Framer Motion** – Animations and transitions
+- **Lucide React** – Modern icon set for React
+- **Jest** – JavaScript testing framework
+- **shadcn** – UI components for modern React applications
+- 
+---
+
+### 🚀 Improvements
+
+- Unit Testing to test individual components and their functions.
+- Implement React Query to manage API services, data fetching, and caching.
+- Implement the Provider Pattern or State Management.
+- Implement server-side rendering (SSR) for better performance.
+- Global styling theme by modifying the Tailwind configuration file. 
+
+### 🎯 Contributions & Feedback
+
+Feel free to open an issue or submit a pull request if you have suggestions or improvements!
+
